@@ -36,15 +36,14 @@
 }
 
 /**
-* Se incluye una transicion reutilizable para los hover de distintos links
-* que se comportan practicamente igual
+* Gradiente linear reutilizable para aplicar difuminado en uno de los extremos de una imagen
 */
-@mixin hover-link-transition($color, $time: 0.3s) {
-  @include transition(color $time);
-
-  &:hover {
-    color: $color;
-  }
+@mixin background-linear-gradient($direction) {
+  background: linear-gradient(
+    $direction,
+    $color-transparent 70%,
+    $color-secondary 100%
+  );
 }
 
 /**

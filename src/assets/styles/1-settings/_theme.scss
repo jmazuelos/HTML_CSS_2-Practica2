@@ -8,50 +8,18 @@ $color-transparent: hsla(0, 0%, 0%, 0);
 $color-error: hsl(0, 100%, 50%);
 $color-valid: hsl(118, 100%, 35%);
 
-/*======= #ELEMENTS COLORS =======*/
-$color-body: hsl(204, 100%, 97%);
-$color-header-menu: hsl(204, 100%, 90%);
-$color-header-container: hsl(204, 100%, 95%);
-
-$color-header-sublist: hsl(0, 0%, 98%);
-$color-footer-set: hsl(0, 0%, 100%);
-$color-card-title: hsl(0, 0%, 100%);
-
-/*======= #LINK COLORS =======*/
-
-/*======= #FOCUS AND HOVER COLORS =======*/
-$color-hover-header-link: hsl(235, 49%, 60%);
-$color-hover-footer-link: hsl(205, 100%, 68%);
-
 /*======= #GRADIENTS =======*/
-$gradient-header-shadow: linear-gradient(
-  180deg,
-  $color-transparent 50%,
-  $color-primary 500%
+$gradient-radial-image: radial-gradient(
+  circle at center,
+  $color-secondary 50%,
+  $color-transparent 70%
 );
 
-$gradient-section-bottom-shadow: linear-gradient(
-  180deg,
-  $color-transparent 95%,
-  $color-body 100%
+$gradient-linear-top: linear-gradient(
+  to top,
+  $color-transparent 0%,
+  $color-secondary 10%
 );
-
-$gradient-section-top-shadow: linear-gradient(
-  0deg,
-  $color-transparent 94%,
-  $color-body 100%
-);
-
-$gradient-section-card-shadow: linear-gradient(
-  180deg,
-  $color-transparent 40%,
-  $color-primary 100%
-);
-
-/*======= #SHADOWS (BOX-SHADOWS) =======*/
-$shadow-header: 0px 0.1px 5px $color-primary;
-$shadow-header-sublist: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
-$shadow-section-card: 0px 1px 5px $color-primary, 0px 1px 5px $color-primary;
 
 /*======= #BOOTSTRAP THEME =======*/
 

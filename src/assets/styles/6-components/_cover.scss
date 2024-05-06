@@ -22,40 +22,40 @@
 @supports (display: grid) {
   @media (min-width: 670px) and (min-height: 27em) {
     .cover {
+      display: grid;
+      grid-template-rows: 30vh 10vh 15vh 10vh 25vh;
+      grid-template-columns: 30vw 5vw 30vw 15vw;
       max-width: none;
       padding: 0;
-      display: grid;
-      grid-template-columns: 30vw 5vw 30vw 15vw;
-      grid-template-rows: 30vh 10vh 15vh 10vh 25vh;
 
       .cover__title {
-        grid-column: 2 / 5;
-        grid-row: 1 / 2;
         z-index: 2;
-        font-size: calc(14px + 5vw);
+        grid-row: 1 / 2;
+        grid-column: 2 / 5;
         justify-self: start;
         margin-top: auto;
+        font-size: calc(14px + 5vw);
       }
 
       .cover__catchword {
-        grid-column: 3 / 5;
         grid-row: 2 / 3;
+        grid-column: 3 / 5;
         justify-self: center;
         font-size: calc(10px + 2vw);
         text-align: center;
       }
 
       .cover__about {
-        grid-column: 3 / 5;
         grid-row: 3 / 4;
+        grid-column: 3 / 5;
         place-self: center;
         text-align: center;
       }
 
       .cover__image-content {
-        grid-column: 1 / 3;
-        grid-row: 1 / 6;
         position: relative;
+        grid-row: 1 / 6;
+        grid-column: 1 / 3;
       }
 
       .cover__image {
@@ -66,68 +66,41 @@
       }
 
       .cover__image-content::before {
-        content: "";
         position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: linear-gradient(
-          to right,
-          rgba(255, 0, 0, 0) 70%,
-          rgba(255, 255, 255) 100%
-        );
+        inset: 0; //mismo que top: 0; right: 0; bottom: 0; left: 0;
         z-index: 1;
+        content: "";
+        @include background-linear-gradient(to right);
       }
 
       .cover__image-content::after {
-        content: "";
         position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: linear-gradient(
-          to left,
-          rgba(255, 0, 0, 0) 70%,
-          white 100%
-        );
+        inset: 0;
         z-index: 1;
+        content: "";
+        @include background-linear-gradient(to left);
       }
-
-      /*
-      .image {
-        object-fit: cover;
-        height: 100%;
-        width: 100%;
-        mask-image: radial-gradient(
-          50% 50% at 50% 50%,
-          white 85%,
-          transparent 101%
-        );
-      }
-      */
 
       .cover__location {
-        grid-column: 3 / 4;
-        grid-row: 4 / 5;
         z-index: 2;
+        grid-row: 4 / 5;
+        grid-column: 3 / 4;
         place-self: center;
-        text-align: center;
         font-size: calc(12px + 1vw);
+        text-align: center;
       }
 
       .cover__btn {
-        grid-column: 4 / 5;
         grid-row: 4 / 5;
+        grid-column: 4 / 5;
         font-size: calc(12px + 1vw);
 
         @media (max-width: 992px) {
-          grid-column: 3 / 4;
           grid-row: 5 / 6;
+          grid-column: 3 / 4;
+          justify-self: center;
           max-width: fit-content;
           margin-bottom: auto;
-          justify-self: center;
         }
       }
     }

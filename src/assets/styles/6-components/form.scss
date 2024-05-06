@@ -17,10 +17,10 @@
 .form__input,
 .form__textarea,
 .form__select {
-  border: 2px solid var(--color);
-  border-radius: 4px;
   padding-inline: 0.5rem;
   font-weight: 400;
+  border: 2px solid var(--color);
+  border-radius: 4px;
   transition: border-color var(--transition);
 }
 
@@ -38,18 +38,18 @@
 
 .form__group {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
-  flex-wrap: wrap;
 }
 
 label {
-  font-weight: bold;
   padding-right: 1rem;
-  transform-style: preserve-3d;
-  transition: color var(--transition);
-  color: var(--color);
   font-size: 1.25rem;
+  font-weight: bold;
+  transform-style: preserve-3d;
+  @include transition(color var(--transition));
+  color: var(--color);
 }
 
 .form__group:has(:invalid) {

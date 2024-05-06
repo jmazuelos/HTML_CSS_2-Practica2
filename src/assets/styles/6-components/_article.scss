@@ -1,6 +1,6 @@
 .article__header {
-  height: 35vh;
   align-content: center;
+  height: 35vh;
   text-align: center;
 }
 
@@ -18,17 +18,18 @@
   object-fit: cover;
   object-position: center;
   opacity: 0.15;
-  mask-image: linear-gradient(to top, rgba(255, 0, 0, 0) 0%, white 10%);
+  mask-image: $gradient-linear-top;
 }
 
 .article img:where(.radial-image) {
-  mask-image: radial-gradient(50% 50% at 50% 50%, white 85%, transparent 101%);
+  mask-image: $gradient-radial-image;
 }
 
 .article :where(.first-section:has(blockquote)) {
   display: flex;
   gap: 10px;
   margin-top: 0.75rem;
+
   @media (max-width: 670px) {
     flex-wrap: wrap;
   }
@@ -37,8 +38,8 @@
 .article__figure:has(figcaption) {
   width: 90%;
   margin-inline: auto;
-  text-align: center;
   font-size: $font-size-small;
+  text-align: center;
 }
 
 .article :where(p, blockquote) {
