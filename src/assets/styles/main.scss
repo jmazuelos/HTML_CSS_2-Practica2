@@ -1,0 +1,57 @@
+/**
+ * Use this file to import partials.
+ * Do not include SCSS code in this file.
+ */
+
+/**
+ * Import settings (scss variables for theme colors, typography, devices breakpoints, model-box and positioning properties)
+ */
+@import "1-settings/properties";
+@import "1-settings/theme";
+@import "1-settings/typography";
+
+/**
+ * Import tools (scss mixins and functions)
+ */
+
+@import "2-tools/external-dependencies";
+/*@import "2-tools/functions";*/
+@import "2-tools/mixins";
+
+/**
+ * Import generic (generic css like reset, normalize, box sizing)
+ */
+
+@import "3-generic/box-sizing";
+@import "3-generic/reset";
+
+/**
+* Import all of Bootstrap's CSS
+*/
+
+@import "bootstrap/scss/bootstrap";
+
+/**
+ * Import elements (style specific html tags like body, a, p, ul li, ol li)
+ */
+
+@import "4-elements/elements";
+
+/**
+ * Import objects (layout object like media object, grid, container, stack, inline)
+ */
+
+@import "5-objects/objects";
+
+/**
+ * Import components (layout components like teaser, navigation, header, footer)
+ */
+@import "6-components/article";
+@import "6-components/cover";
+@import "6-components/fontawesome-icon";
+
+/**
+ * Import utilities (utility classes like states, text-center, text-right, text-left)
+ */
+
+@import "7-utilities/utilities";

@@ -1,0 +1,59 @@
+/**
+* Mixin tools
+*/
+
+//Se comenta por pruebas de rendimiento, muestra ejemplos de mixins
+/*
+@mixin border-radius($size) {
+  -webkit-border-radius: $size;
+  -moz-border-radius: $size;
+  border-radius: $size;
+}
+
+@mixin animation($args) {
+  -webkit-animation: $args;
+  -moz-animation: $args;
+  -ms-animation: $args;
+  -o-animation: $args;
+  animation: $args;
+}
+*/
+
+@mixin transition($args) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin transform($args) {
+  -webkit-transform: $args;
+  -moz-transform: $args;
+  -ms-transform: $args;
+  -o-transform: $args;
+  transform: $args;
+}
+
+/**
+* Se incluye una transicion reutilizable para los hover de distintos links
+* que se comportan practicamente igual
+*/
+@mixin hover-link-transition($color, $time: 0.3s) {
+  @include transition(color $time);
+
+  &:hover {
+    color: $color;
+  }
+}
+
+/**
+* Personaliza el container (Bootstrap)
+*/
+@mixin make-container($gutter: $container-padding-x) {
+  width: 100%;
+  padding-right: $padding-x;
+  padding-left: $padding-x;
+  margin-right: auto;
+  margin-left: auto;
+}

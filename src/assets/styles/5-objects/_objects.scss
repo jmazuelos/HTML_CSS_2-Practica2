@@ -1,0 +1,10 @@
+.custom-container {
+  $container-padding-x: 10vw;
+  @include make-container($gutter: $container-padding-x);
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      type="image/jpg"
+      href="../assets/images/global/favicon/favicon.ico"
+    />
+    <title>Samurai Chef | Blog</title>
+    <link rel="stylesheet" href="/src/assets/styles/main.scss" />
+    <script type="module" src="../assets/scripts/main.js"></script>
+  </head>
+  <body>
+    <!--======= #HEADER =======-->
+    <include src="./views/shared/header.html"></include>
+
+    <!--======= #MAIN =======-->
+    <main class="container py-3 px-3 mx-auto">
+      <article class="article">
+        <div class="article__header">
+          <h1 class="article__title">
+            I Edición del concurso de cocina japonesa
+          </h1>
+          <span>Por: jmazuelos</span>
+          <img
+            class="article__main-image"
+            src="/src/assets/images/blog/platos.jpeg"
+            alt="Foto 1"
+          />
+        </div>
+        <div class="article__body">
+          <section class="article__first-section my-3">
+            <blockquote cite="https://www.huxley.net/bnw/four.html">
+              <p>
+                <strong
+                  >“La cocina de autor es poner tu personalidad en lo que haces
+                  y ese sentimiento la convierte en algo distinto.”</strong
+                >
+              </p>
+              <cite>— <strong>Ferran Adriá</strong></cite>
+            </blockquote>
+            <p>
+              Bienvenidos a la primera edición del concurso de cocina japonesa
+              que tendrá lugar en Sevilla. Este evento busca celebrar la rica y
+              diversa cultura gastronómica de Japón.
+            </p>
+          </section>
+          <section>
+            <h3>Información General</h3>
+            <p>
+              El evento tuvo lugar el [Fecha] en [Lugar]. Será un día lleno de
+              sabores exquisitos y presentaciones impresionantes.
+            </p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <strong>Tiempo:</strong> Los participantes tienen un tiempo
+                limitado de 90 minutos para preparar y presentar sus platos.
+              </li>
+              <li class="list-group-item">
+                <strong>Utensilios:</strong> Los participantes pueden utilizar
+                solo los utensilios proporcionados por la organización del
+                concurso.
+              </li>
+              <li class="list-group-item">
+                <strong>Originalidad:</strong> Se premiará a los participantes
+                que muestren creatividad e innovación en sus platos.
+              </li>
+              <li class="list-group-item">
+                <strong>Técnica:</strong> Los participantes deben demostrar
+                habilidades técnicas en la preparación de sus platos. Por
+                ejemplo, deben mostrar su habilidad para cortar pescado para
+                sushi o para preparar tempura.
+              </li>
+            </ul>
+            <p>Tercer párrafo: Este es el tercer párrafo del artículo.</p>
+          </section>
+          <img src="/src/assets/images/blog/concurso.jpg" alt="Foto 2" />
+          <section>
+            <h3>Agradecimientos</h3>
+            <p>
+              Agradecemos a todos los participantes por su esfuerzo y
+              dedicación. Esperamos verlos a todos en la próxima edición del
+              concurso.
+            </p>
+          </section>
+        </div>
+      </article>
+    </main>
+
+    <!--======= #FOOTER =======-->
+    <include src="./views/shared/footer.html"></include>
+  </body>
+</html>
