@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      type="image/jpg"
+      href="../assets/images/global/favicon/favicon.ico"
+    />
+    <title>Samurai Chef | Form</title>
+    <link rel="stylesheet" href="/src/assets/styles/main.scss" />
+    <script type="module" src="../assets/scripts/main.js"></script>
+  </head>
+  <body>
+    <!--======= #HEADER =======-->
+    <include src="./views/shared/header.html"></include>
+
+    <!--======= #MAIN =======-->
+    <main class="container py-3 px-3 mx-auto">
+      <form class="form" name="contact" method="POST" netlify>
+        <div class="form__group">
+          <label>Nombre y apellidos:</label>
+          <input
+            class="form__input"
+            type="text"
+            name="name"
+            placeholder=""
+            required
+          />
+        </div>
+        <div class="form__group">
+          <label>Email:</label>
+          <input
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            class="form__input"
+            type="email"
+            name="email"
+            placeholder=""
+            required
+          />
+        </div>
+        <div class="form__group">
+          <label>Rol: </label>
+          <select class="form__select" name="role[]" required>
+            <option value="competitor" selected>Concursante</option>
+            <option value="viewer">Espectador</option>
+          </select>
+        </div>
+        <div class="form__group">
+          <label>Descripción:</label>
+          <textarea
+            class="form__textarea form__textarea--big"
+            name="message"
+            placeholder=""
+            required
+          ></textarea>
+        </div>
+        <div class="form__group-file">
+          <label>Imagen: </label>
+          <input
+            class="form__input-file form-control form-control-sm mb-2"
+            name="file"
+            type="file"
+          />
+        </div>
+        <div>
+          <button class="btn btn-primary" type="submit">Enviar</button>
+        </div>
+      </form>
+    </main>
+
+    <!--======= #FOOTER =======-->
+    <include src="./views/shared/footer.html"></include>
+  </body>
+</html>

@@ -69,10 +69,22 @@ Are you using this Boilerplate for your projects or for educational purposes? I 
 
 ## Tareas
 
-Chef: ajustar titulo centro y añadir descripciones
-Blog: mejorar imagen con gradientes? Completar descripciones, ajustar parrafos y utilizar has, is, where
+Crear metodo con entrada right, left -> .cover\_\_image-content::before {
+content: "";
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background: linear-gradient(
+to right,
+rgba(255, 0, 0, 0) 70%,
+rgba(255, 255, 255) 100%
+);
+z-index: 1;
+}
 Finalizar formulario
 
-\*vALIDAR TODO HTML Y PROBAR PANTALLA QUE MENOR RENDIMIENTO TENGA
+-VALIDAR TODO HTML Y PROBAR PANTALLA QUE MENOR RENDIMIENTO TENGA
 
 Componentes Bootstrap: header, footer, card, lista, formulario..., container, PRIMARY BUTTON (COLOR PERSONALIZADO)
