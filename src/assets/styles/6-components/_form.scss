@@ -52,20 +52,26 @@ label {
   color: var(--color);
 }
 
-.form__group:has(:invalid) {
-  --color: var(--invalid);
+@layer invalid {
+  .form__group:has(:invalid) {
+    --color: var(--invalid);
+  }
 }
 
 .form__group:has(:focus) {
   --color: var(--focus);
 }
 
-.form__group:has(:valid) {
-  --color: var(--valid);
+@layer valid {
+  .form__group:has(:valid) {
+    --color: var(--valid);
+  }
 }
 
-.form__group:has(:placeholder-shown) {
-  --color: var(--primary);
+@layer normal {
+  .form__group:has(:placeholder-shown) {
+    --color: var(--primary);
+  }
 }
 
 .form__textarea--big {
