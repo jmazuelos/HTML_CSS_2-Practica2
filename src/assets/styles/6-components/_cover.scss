@@ -82,8 +82,8 @@
         }
 
         @container cover (max-width: 120dvmin) {
-          grid-column: 1 / 4;
           z-index: -1;
+          grid-column: 1 / 4;
           opacity: 0.3;
         }
       }

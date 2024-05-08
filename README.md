@@ -68,12 +68,3 @@ Feel free to create a [new issue](https://github.com/uoc-advanced-html-css/uoc-b
 Are you using this Boilerplate for your projects or for educational purposes? I would love to hear about it!
 
 ## Tareas
-
-- Ver error de pro
-- Finalizar formulario
-
-- VALIDAR TODO HTML Y PROBAR PANTALLA QUE MENOR RENDIMIENTO TENGA
-
--documentacion
-
-Componentes Bootstrap: header (personalizado), footer (personalizado), card, lista, formulario..., container (personalizado), PRIMARY BUTTON (COLOR PERSONALIZADO)
